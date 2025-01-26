@@ -17,3 +17,9 @@ Today i started by learning about Event loops, and how we can offload demanding 
 Thereafter i learnt about event emitters and how we can create an instance of the eventemiiter class to use the on() ad emit() function which are essential to handle events. There are also some built-in emits that different modules uses for eg. the "requests" event in the http module. 
 
 After that i learned about streams and how we can send huge files in chunks to the browser using pipe() function. Finally to warp it up, I learned about how the web browser requests tp the server and how the ser responds. 
+
+## 26 January
+
+Today, I started off with more advanced basics of http modules to see how express can really help us cut down the code. I imported my previous navbar project to use it in this example where i created a server and used readFileSync to read all the html, js and css files, to display them on the browser using the http module. 
+
+I also learned about status codes and MIME types and used the writeHead function to manupilate the status code and the MIME types to my needs. I then used write() function to render the content on the page. Afterwards i started with express and learned about common metods like get, post, put, all and delete. I like how we do not have to create a server and specify the status code and MIME types like in http module, express does that for us.
