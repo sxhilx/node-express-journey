@@ -18,8 +18,14 @@ Thereafter i learnt about event emitters and how we can create an instance of th
 
 After that i learned about streams and how we can send huge files in chunks to the browser using pipe() function. Finally to warp it up, I learned about how the web browser requests tp the server and how the ser responds. 
 
-## 26 January
+# 26 January
 
 Today, I started off with more advanced basics of http modules to see how express can really help us cut down the code. I imported my previous navbar project to use it in this example where i created a server and used readFileSync to read all the html, js and css files, to display them on the browser using the http module. 
 
 I also learned about status codes and MIME types and used the writeHead function to manupilate the status code and the MIME types to my needs. I then used write() function to render the content on the page. Afterwards i started with express and learned about common metods like get, post, put, all and delete. I like how we do not have to create a server and specify the status code and MIME types like in http module, express does that for us.
+
+# 27 January
+
+I started off by learning about the static function in Express to render all the static files (CSS, images, or JS) onto the browser. It’s pretty straightforward compared to the HTTP module—created a public folder and dumped all the files there—instead of importing all the files manually.
+
+Then I learned basic JSON functionalities to create a basic API. While creating the API, I learned about req.params, which is used for routes, e.g., /api/products/:id, where id is just a placeholder for a specific resource. I also learned about the query object, which is essentially used for filtration, e.g., /api/products/query?type=book&author=sam.
