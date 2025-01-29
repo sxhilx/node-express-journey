@@ -1,4 +1,4 @@
-## My journey throught learning node
+## My journey throughout learning node and express
 
 # 23 January
 
