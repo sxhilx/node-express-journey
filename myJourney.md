@@ -29,3 +29,9 @@ I also learned about status codes and MIME types and used the writeHead function
 I started off by learning about the static function in Express to render all the static files (CSS, images, or JS) onto the browser. It’s pretty straightforward compared to the HTTP module—created a public folder and dumped all the files there—instead of importing all the files manually.
 
 Then I learned basic JSON functionalities to create a basic API. While creating the API, I learned about req.params, which is used for routes, e.g., /api/products/:id, where id is just a placeholder for a specific resource. I also learned about the query object, which is essentially used for filtration, e.g., /api/products/query?type=book&author=sam.
+
+# 29 January
+
+Today i learned about middlewares in express, and how we can create out own middleware as well as use express provided middlewares and thirdparty middleware, a middleware a essentially just a function or a set of code that executes after the request had been made by a user and before the response is sent. 
+
+We can use middleware to authorise users, and we can use middlewares in all of the HTTP methods by using the .use() function where we just pass in the middleware function. One interesting thing about this, we don't need to pass req and res explicitly when refrencing a middleware. An important syntax, we have to include the next param along with req and res, this param essentially just forwards the request to the next middleware or the final route.
