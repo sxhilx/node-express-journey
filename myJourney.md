@@ -35,3 +35,10 @@ Then I learned basic JSON functionalities to create a basic API. While creating 
 Today i learned about middlewares in express, and how we can create out own middleware as well as use express provided middlewares and thirdparty middleware, a middleware a essentially just a function or a set of code that executes after the request had been made by a user and before the response is sent. 
 
 We can use middleware to authorise users, and we can use middlewares in all of the HTTP methods by using the .use() function where we just pass in the middleware function. One interesting thing about this, we don't need to pass req and res explicitly when refrencing a middleware. An important syntax, we have to include the next param along with req and res, this param essentially just forwards the request to the next middleware or the final route.
+
+# 30 January
+
+I started by learning different methods—GET, POST, PUT and DELETE—in express, and to make the process faster by not having to create  a frontend everytime to test out the API, i learned about Postman, a tool that essentially helps you test your API's. 
+
+Thereafter i started with routers, since my app.js file got pretty messy after the methods session, i learned about routers, I created a routes folder and moved all my methods from app.js to routes, replacing the app with router, However even the routes file got pretty messy, so i learned about controllers, where you create all the functions for the methods, export them and import them into the routes file and pass it in as a reference.
+
