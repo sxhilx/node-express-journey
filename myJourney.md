@@ -44,8 +44,4 @@ Thereafter i started with routers, since my app.js file got pretty messy after t
 
 And with that i have covere both node and express basics and tomorrow i shall start with creating meaningful projects
 
-# 31 January
 
-Today i started by creating a task manager project, which is essentially a todo-list app but not just any todo-list app, its gonna have a complete backend with API's and database. Today i set up the routes and the controllers for the project, as well as created a new collection in Postman to organise the project and test all the routes. 
-
-I also learned what are REST API's, It stands for Representational State Transfer API. Which is essentially just a manner in which we create APIs. Then, i learned about MongoDB and how we can use mongoose to establish a connection with our Mongo Database using the .env file. 
