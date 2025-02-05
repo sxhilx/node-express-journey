@@ -1,4 +1,4 @@
-## My journey throughout learning node and express
+## My journey throughout learning node and express basics
 
 # 23 January
 

@@ -1,20 +1,25 @@
-const {CustomAPIError} = require('../errors/custom-error')
+const jwt = require('jsonwebtoken')
+const {BadRequest} = require('../errors')
 
 const login = async (req,res) => {
     const {username, password} = req.body;
 
     if(!username || !password){
-        throw new CustomAPIError(`Please provide email and password`, 400)
+        throw new BadRequest(`Please provide email and password`)
     }
+    const id = new Date().getDate()
 
-    console.log(username, password)
+    const token = jwt.sign({id, username},process.env.JWT_SECRET, {expiresIn:'30d'})
 
-    res.send('Fake Login/Register/Signup Route')
+
+    res.status(200).json({msg:"user created", token})
 }
 
 const dashboard = async (req,res) => {
     const luckyNumber = Math.floor(Math.random()*100)
-    res.status(200).json({msg:`Hello, John Doe`, secret:`Here is your authorized luck number, ${luckyNumber}`})
+
+    res.status(200).json({msg:`Hello, ${req.user.username}`, secret:`Here is your authorized luck number, ${luckyNumber}`})
+    
 }
 
 module.exports = {
